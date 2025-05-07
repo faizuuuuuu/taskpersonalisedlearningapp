@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/topicHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic: "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/textGeneratedHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generated Task"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#0D47A1"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/textTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description of the generated quiz"
+            android:textColor="#555"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutQuestions"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
